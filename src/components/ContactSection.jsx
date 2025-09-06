@@ -37,18 +37,20 @@ export const ContactSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Have a project in mind or want to collaborate? Feel free to reach out.
-          I'm always open to discussing new opportunities.
+          Have an idea in mind or a project to discuss? We’d love to hear from
+          you! Whether it’s a website, app, or design project, our team is here
+          to help bring your vision to life. Drop us a message and we’ll get
+          back to you as soon as possible.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="space-y-8">
+          <div className="space-y-8 ">
             <h3 className="text-2xl font-semibold mb-6">
               {" "}
               Contact Information
             </h3>
 
-            <div className="space-y-6 justify-center">
+            <div className="space-y-7 justify-center ">
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Mail className="h-6 w-6 text-primary" />{" "}
@@ -56,10 +58,10 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Email</h4>
                   <a
-                    href="mailto:hello@gmail.com"
+                    href="mailto:connect@exybus.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    hello@gmail.com
+                    connect@exybus.com
                   </a>
                 </div>
               </div>
@@ -73,7 +75,7 @@ export const ContactSection = () => {
                     href="tel:+11234567890"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (123) 456-7890
+                    +91 (966) 550 9564
                   </a>
                 </div>
               </div>
@@ -82,15 +84,15 @@ export const ContactSection = () => {
                   <MapPin className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
-                  <h4 className="font-medium"> Location</h4>
+                  <h4 className="font-medium">Location</h4>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Vancouver, BC, Canada
+                    Pune, MH - 411036
                   </a>
                 </div>
               </div>
             </div>
 
-            <div className="pt-8">
+            {/* <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
                 <a href="#" target="_blank">
@@ -106,7 +108,7 @@ export const ContactSection = () => {
                   <Twitch />
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div
@@ -130,7 +132,7 @@ export const ContactSection = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="Pedro Machado..."
+                  placeholder="Brian Steeby..."
                 />
               </div>
 

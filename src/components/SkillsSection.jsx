@@ -2,29 +2,30 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const skills = [
-  // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 90, category: "frontend" },
-  { name: "TypeScript", level: 85, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "Next.js", level: 80, category: "frontend" },
+  // Websites
+  { name: "Custom Website Development", level: "Business sites, Personal sites, Portfolios", category: "Websites" },
+  { name: "E-Commerce Solutions", level: "Shopify, WooCommerce, Custom MERN Stack Stores", category: "Websites" },
+  { name: "CMS Developmentact", level: "WordPress, Webflow, Custom CMS", category: "Websites" },
+  { name: "SEO Optimization", level: "Technical + On-page SEO", category: "Websites" },
+  { name: "Website Maintenance & Support", level: "", category: "Websites" },
+  
 
-  // Backend
-  { name: "Node.js", level: 80, category: "backend" },
-  { name: "Express", level: 75, category: "backend" },
-  { name: "MongoDB", level: 70, category: "backend" },
-  { name: "PostgreSQL", level: 65, category: "backend" },
-  { name: "GraphQL", level: 60, category: "backend" },
+  // Apps
+  { name: "Mobile App Development", level: "iOS & Android – React Native/Flutter", category: "Apps" },
+  { name: "Web Apps", level: "Custom dashboards, SaaS platforms, Internal systems", category: "Apps" },
+  { name: "API Development & Integration", level: "", category: "Apps" },
+  { name: "Cross-Platform Apps", level: "", category: "Apps" },
+  { name: "App Maintenance & Updates", level: "", category: "Apps" },
 
-  // Tools
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Docker", level: 70, category: "tools" },
-  { name: "Figma", level: 85, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
+  // UI/UX
+  { name: "User Interface Design", level: "", category: "UI/UX" },
+  { name: "User Experience Research & Wireframing", level: "", category: "UI/UX" },
+  { name: "Prototyping & Interactive Mockups", level: "Figma, Adobe XD", category: "UI/UX" },
+  { name: "Brand Identity & Design Systems", level: "", category: "UI/UX" },
+  { name: "Responsive Design for all devices", level: "", category: "UI/UX" },
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = ["all", "Websites", "Apps", "UI/UX"];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -36,7 +37,7 @@ export const SkillsSection = () => {
     <section id="skills" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          My <span className="text-primary"> Skills</span>
+          Our <span className="text-primary"> Services</span>
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -65,16 +66,19 @@ export const SkillsSection = () => {
               <div className="text-left mb-4">
                 <h3 className="font-semibold text-lg"> {skill.name}</h3>
               </div>
-              <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
+              <div className="w-full bg-secondary/50 h-1 rounded-full overflow-hidden">
                 <div
                   className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
-                  style={{ width: skill.level + "%" }}
+                  style={{ width: skill.level + "" }} 
+                  
+                  
                 />
+                
               </div>
 
-              <div className="text-right mt-1">
+              <div className="text-left mt-1 ">
                 <span className="text-sm text-muted-foreground">
-                  {skill.level}%
+                  {skill.level}
                 </span>
               </div>
             </div>
