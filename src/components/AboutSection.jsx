@@ -15,7 +15,7 @@ export const AboutSection = () => {
 
             <p className="text-muted-foreground">
               We’re not your average dev agency. ExyBus is a tech-forward team
-              that connects clients with top-tier freelance talent — and manages
+              that connects clients with top-tier developers — and manages
               it all for you. From websites and mobile apps to complete project
               execution, we take the pressure off your plate and put performance
               on it.

@@ -6,7 +6,7 @@ export const Footer = () => {
       {" "}
       <p className="text-sm text-muted-foreground">
         {" "}
-        &copy; {new Date().getFullYear()} Exybus Tehnologies Pvt Ltd. All Rights Reserved
+        &copy; {new Date().getFullYear()} Exybus Solutions Pvt Ltd. All Rights Reserved
       </p>
       <a
         href="#hero"
