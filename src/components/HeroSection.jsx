@@ -26,7 +26,12 @@ export const HeroSection = () => {
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-            <a href="#projects" className="cosmic-button">
+            <a
+              href="https://calendly.com/exybus/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cosmic-button"
+            >
               Let's connect
             </a>
           </div>
